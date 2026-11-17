@@ -54,6 +54,7 @@ public class LiveCoding {
         System.out.print("What is the passing mark? ");
         int passingMark = input.nextInt();
         int index = grades.length;
+        System.out.println("Passed: " + countPassing(grades, passingMark));
         System.out.println("Passed: " + countPassingRecursive(grades, passingMark, index));
         System.out.println();
         
@@ -73,10 +74,11 @@ public class LiveCoding {
         System.out.println("---Problem 3---");
         System.out.print("Input an integer for factorial calculation: ");
         int n = input.nextInt();
-        if (factorial(n) == -1) {
+        int factorialResult = factorial(n);
+        if (factorialResult == -1) {
             System.out.println("Invalid integer for factorial calculation.");
         } else {
-            System.out.println("Factorial of " + n + ": " + factorial(n));
+            System.out.println("Factorial of " + n + ": " + factorialResult);
         }
         
         /**
