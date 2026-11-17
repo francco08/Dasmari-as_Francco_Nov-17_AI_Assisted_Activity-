@@ -116,7 +116,7 @@ public class LiveCoding {
         return passed;
     }
     
-    //Problem 2 method - Part A
+    //Problem 2 method - Part B
     public static int countPassingRecursive(int[] grades, int passingMark, int index) {
         if (index <= 0) {
             return 0;
